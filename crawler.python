@@ -1,0 +1,31 @@
+#!/usr/bin/python
+
+#_*_ conding:utf-8 _*_
+
+import urllib2 request
+import cookielib
+
+url = "http://www.baidu.com"
+
+print("one:")
+response1 = request.urlopen(url)
+print(response1.getcode()) //打印打开网页的返回状态，2000 表示ok
+print(len(response1.read()))
+
+
+print("two:")
+request1 = request.Request(url)
+request1.add_header('user-agent','Mozilla/5.0')
+response2 = request.urlopen(url)
+print(response2.getcode()) //打印打开网页的返回状态，2000 表示ok
+print(len(response2.read()))
+
+
+print("three:")
+cj = http.cookiejar.CookieJar()
+opener = request.build_opener(request.HTTPCookieProcessor(cj))
+request.install_opener(opener)
+response3 = request.urlopen(url)
+print(response3.getcode()) //打印打开网页的返回状态，2000 表示ok
+print(len(response3.read()))
+print(cj)
