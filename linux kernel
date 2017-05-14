@@ -1,0 +1,8 @@
+glibc func --> 系统调用号 --> 软中断 --> system_call() -->kernel func
+
+
+usb specification
+
+USB 1.1 UHCI/OHCI
+USB 2.0 EHCI
+USB 3.0 XHCI
