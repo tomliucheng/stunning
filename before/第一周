@@ -1,0 +1,18 @@
+day 1
+static 限制变量作用域，延长变量作用时间，放在data段
+
+tcp 三次握手建立连接，四次挥手断开连接
+ ask ack sure
+ fin ack fin ack
+
+gpio
+输入
+输出
+
+usb
+endpoint interface config gadget device
+
+sync
+buck
+interrupt
+control
